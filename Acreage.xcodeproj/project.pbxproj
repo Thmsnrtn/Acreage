@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE6DAAC62DE3FF29005B9A8E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CE6DAAC52DE3FF29005B9A8E /* Lottie */; };
+		CE6DAAC82DE3FF29005B9A8E /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE6DAAC72DE3FF29005B9A8E /* Lottie-Dynamic */; };
+		CE9A73E12DEB53E900200275 /* MailIntegrationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73E02DEB53BE00200275 /* MailIntegrationAPI.swift */; };
+		CE9A73E22DEB540200200275 /* MailCampaignEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73DF2DEB538000200275 /* MailCampaignEngine.swift */; };
+		CE9A73E32DEB540700200275 /* PrintFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73DE2DEB536A00200275 /* PrintFormat.swift */; };
+		CE9A73E42DEB540C00200275 /* MailAutomationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73DD2DEB534E00200275 /* MailAutomationSettings.swift */; };
+		CE9A73E52DEB541100200275 /* PrintUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73DC2DEB532300200275 /* PrintUtilities.swift */; };
+		CE9A73E62DEB541700200275 /* MailingLabelFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73DB2DEB530F00200275 /* MailingLabelFormatter.swift */; };
+		CE9A73E72DEB541C00200275 /* PDFExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73DA2DEB52FA00200275 /* PDFExporter.swift */; };
+		CE9A73E82DEB542100200275 /* DocumentPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D92DEB52D700200275 /* DocumentPreviewView.swift */; };
+		CE9A73E92DEB542600200275 /* DocumentFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D82DEB529900200275 /* DocumentFormatter.swift */; };
+		CE9A73EA2DEB542B00200275 /* DefaultTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D72DEB527F00200275 /* DefaultTemplates.swift */; };
+		CE9A73EB2DEB543000200275 /* DocumentTemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D62DEB526800200275 /* DocumentTemplateManager.swift */; };
+		CE9A73EC2DEB543500200275 /* DocumentTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D52DEB524D00200275 /* DocumentTemplate.swift */; };
+		CE9A73ED2DEB545700200275 /* CampaignManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D42DEB521C00200275 /* CampaignManager.swift */; };
+		CE9A73EE2DEB545F00200275 /* CampaignsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D32DEB520400200275 /* CampaignsView.swift */; };
+		CE9A73EF2DEB546400200275 /* CampaignRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D22DEB51EA00200275 /* CampaignRowView.swift */; };
+		CE9A73F02DEB546900200275 /* CampaignDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D12DEB51DA00200275 /* CampaignDetailView.swift */; };
+		CE9A73F12DEB546F00200275 /* InboundMailRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73D02DEB51A300200275 /* InboundMailRecord.swift */; };
+		CE9A73F22DEB547400200275 /* VirtualMailboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73CF2DEB518900200275 /* VirtualMailboxManager.swift */; };
+		CE9A73F32DEB547A00200275 /* VirtualMailboxProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73CE2DEB513600200275 /* VirtualMailboxProvider.swift */; };
+		CE9A73F42DEB547F00200275 /* MarketingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73CD2DEB512100200275 /* MarketingEngine.swift */; };
+		CE9A73F52DEB549400200275 /* MarketingCampaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73CC2DEB510600200275 /* MarketingCampaign.swift */; };
+		CE9A73F62DEB549A00200275 /* MapSnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73CB2DEB50F600200275 /* MapSnapshotHelper.swift */; };
+		CE9A73F72DEB54AD00200275 /* MailingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73CA2DEB50DD00200275 /* MailingLabel.swift */; };
+		CE9A73F82DEB54B100200275 /* MailServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C92DEB50C800200275 /* MailServiceProvider.swift */; };
+		CE9A73F92DEB54B700200275 /* LegalTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C82DEB50A900200275 /* LegalTemplate.swift */; };
+		CE9A73FA2DEB54BC00200275 /* LandResearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C72DEB509400200275 /* LandResearchService.swift */; };
+		CE9A73FB2DEB54C100200275 /* LabelFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C62DEB507D00200275 /* LabelFormatter.swift */; };
+		CE9A73FC2DEB550900200275 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C52DEB506B00200275 /* ImagePicker.swift */; };
+		CE9A73FD2DEB550E00200275 /* GeoLocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C42DEB505600200275 /* GeoLocationHelper.swift */; };
+		CE9A73FE2DEB551300200275 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C32DEB504500200275 /* FormField.swift */; };
+		CE9A73FF2DEB551800200275 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C22DEB502B00200275 /* FileManagerHelper.swift */; };
+		CE9A74002DEB551D00200275 /* EmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C12DEB500D00200275 /* EmailService.swift */; };
+		CE9A74012DEB552400200275 /* DueDiligenceChecklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73C02DE9EDC800200275 /* DueDiligenceChecklist.swift */; };
+		CE9A74022DEB552900200275 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73BF2DE9EDAC00200275 /* DashboardView.swift */; };
+		CE9A74032DEB552D00200275 /* CRMRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73BE2DE9EDA000200275 /* CRMRecord.swift */; };
+		CE9A74042DEB553300200275 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73BD2DE9ED8200200275 /* ContentView.swift */; };
+		CE9A74052DEB553800200275 /* ContactHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73BC2DE9ED6F00200275 /* ContactHandler.swift */; };
+		CE9A74062DEB553E00200275 /* Click2MailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73BB2DE9ED4700200275 /* Click2MailService.swift */; };
+		CE9A74072DEB554600200275 /* CapitalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73BA2DE9ECC700200275 /* CapitalManager.swift */; };
+		CE9A74082DEB554B00200275 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73B92DE9ECB700200275 /* AuthManager.swift */; };
+		CE9A74092DEB555000200275 /* AutomationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73B82DE9EC7300200275 /* AutomationEngine.swift */; };
+		CE9A740A2DEB555500200275 /* AssistantContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73B72DE9EB9A00200275 /* AssistantContextManager.swift */; };
+		CE9A740B2DEB555A00200275 /* AssistantContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73B62DE9EB8800200275 /* AssistantContext.swift */; };
+		CE9A740C2DEB556100200275 /* AcreageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A73B52DE9EA7F00200275 /* AcreageApp.swift */; };
+		CE9A740E2DEB55D300200275 /* AutomationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A740D2DEB55B500200275 /* AutomationSettingsView.swift */; };
+		CE9A74102DEB560600200275 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A740F2DEB560000200275 /* SettingsView.swift */; };
+		CE9A74122DEB565A00200275 /* AutomationSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74112DEB564700200275 /* AutomationSettingsManager.swift */; };
+		CE9A74142DEB573C00200275 /* MarketingRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74132DEB566A00200275 /* MarketingRecord.swift */; };
+		CE9A74162DEB577A00200275 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74152DEB577400200275 /* Note.swift */; };
+		CE9A74182DEB579600200275 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74172DEB578B00200275 /* NotificationsManager.swift */; };
+		CE9A741A2DEB57B400200275 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74192DEB57A200200275 /* OnboardingView.swift */; };
+		CE9A741C2DEB57F600200275 /* OpenAIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A741B2DEB57EF00200275 /* OpenAIConfig.swift */; };
+		CE9A741E2DEB582B00200275 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A741D2DEB582200200275 /* Organization.swift */; };
+		CE9A74202DEB583B00200275 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A741F2DEB583500200275 /* Owner.swift */; };
+		CE9A74222DEB585200200275 /* PDFExportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74212DEB584700200275 /* PDFExportHelper.swift */; };
+		CE9A74242DEB586800200275 /* ParcelMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74232DEB585F00200275 /* ParcelMapOverlay.swift */; };
+		CE9A74262DEB587E00200275 /* ParcelMapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74252DEB587100200275 /* ParcelMapOverlayView.swift */; };
+		CE9A74282DEB588F00200275 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74272DEB588900200275 /* PersistenceController.swift */; };
+		CE9A742A2DEB58B100200275 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74292DEB58A700200275 /* PersistenceManager.swift */; };
+		CE9A742C2DEB58C000200275 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A742B2DEB58BD00200275 /* Phase.swift */; };
+		CE9A742E2DEB58D300200275 /* PipelineStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A742D2DEB58CC00200275 /* PipelineStage.swift */; };
+		CE9A74302DEB58E300200275 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A742F2DEB58DE00200275 /* Portfolio.swift */; };
+		CE9A74322DEB58F500200275 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74312DEB58EF00200275 /* PortfolioView.swift */; };
+		CE9A74342DEB590B00200275 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74332DEB590600200275 /* Preferences.swift */; };
+		CE9A74362DEB59A800200275 /* PreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74352DEB591600200275 /* PreferencesManager.swift */; };
+		CE9A74382DEB846200200275 /* PrintEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74372DEB845800200275 /* PrintEngine.swift */; };
+		CE9A743A2DEB84A800200275 /* PrintSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74392DEB84A500200275 /* PrintSettings.swift */; };
+		CE9A743C2DEB84CE00200275 /* PrintSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A743B2DEB84BF00200275 /* PrintSettingsManager.swift */; };
+		CE9A743E2DEB84E100200275 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A743D2DEB84DB00200275 /* Property.swift */; };
+		CE9A74402DEB852300200275 /* PropertyAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A743F2DEB84EF00200275 /* PropertyAnalyzer.swift */; };
+		CE9A74422DEB853500200275 /* PropertyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74412DEB852F00200275 /* PropertyCard.swift */; };
+		CE9A74442DEB857A00200275 /* PropertyContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74432DEB856100200275 /* PropertyContextMenu.swift */; };
+		CE9A74462DEB858F00200275 /* PropertyDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74452DEB858700200275 /* PropertyDashboard.swift */; };
+		CE9A74482DEB85AA00200275 /* PropertyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74472DEB859C00200275 /* PropertyMapView.swift */; };
+		CE9A744A2DEB85C400200275 /* PropertyOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74492DEB85BA00200275 /* PropertyOverlay.swift */; };
+		CE9A744C2DEB85DC00200275 /* PropertyOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A744B2DEB85D300200275 /* PropertyOverlayView.swift */; };
+		CE9A744E2DEB85EE00200275 /* PropertyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A744D2DEB85E700200275 /* PropertyRow.swift */; };
+		CE9A74502DEB860200200275 /* PropertySearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A744F2DEB85F900200275 /* PropertySearchBar.swift */; };
+		CE9A74522DEB868C00200275 /* PropertySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74512DEB867900200275 /* PropertySelectionView.swift */; };
+		CE9A74542DEB86A000200275 /* PurchaseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74532DEB869600200275 /* PurchaseAnalyzer.swift */; };
+		CE9A74562DEB86B600200275 /* PurchaseFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74552DEB86AF00200275 /* PurchaseFlow.swift */; };
+		CE9A74582DEB86CD00200275 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74572DEB86C700200275 /* PurchaseManager.swift */; };
+		CE9A745A2DEB86E500200275 /* PurchaseReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74592DEB86DB00200275 /* PurchaseReviewView.swift */; };
+		CE9A745C2DEB870000200275 /* ReceiptParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A745B2DEB86F200200275 /* ReceiptParser.swift */; };
+		CE9A745E2DEB876100200275 /* ReferralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A745D2DEB874E00200275 /* ReferralManager.swift */; };
+		CE9A74602DEB8E2F00200275 /* RefundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A745F2DEB8E2A00200275 /* RefundManager.swift */; };
+		CE9A74622DEB8E4B00200275 /* RelationshipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74612DEB8E3A00200275 /* RelationshipType.swift */; };
+		CE9A74642DEB8E5F00200275 /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74632DEB8E5A00200275 /* ReminderManager.swift */; };
+		CE9A74662DEB8E7500200275 /* ReportGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74652DEB8E6A00200275 /* ReportGenerator.swift */; };
+		CE9A74682DEB8E8E00200275 /* ResellerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74672DEB8E8300200275 /* ResellerInfo.swift */; };
+		CE9A746A2DEB8ECC00200275 /* ResourceLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74692DEB8EBE00200275 /* ResourceLink.swift */; };
+		CE9A746C2DEB8EE000200275 /* ReturnMailHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A746B2DEB8ED900200275 /* ReturnMailHandler.swift */; };
+		CE9A746E2DEB8EF800200275 /* ROITracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A746D2DEB8EED00200275 /* ROITracker.swift */; };
+		CE9A74702DEB8F0900200275 /* SalesChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A746F2DEB8F0100200275 /* SalesChannel.swift */; };
+		CE9A74722DEB8F1D00200275 /* SalesHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74712DEB8F1400200275 /* SalesHistory.swift */; };
+		CE9A74742DEB8F3B00200275 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74732DEB8F2600200275 /* Scheduler.swift */; };
+		CE9A74762DEB8F8400200275 /* ScriptedAutomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74752DEB8F7A00200275 /* ScriptedAutomation.swift */; };
+		CE9A74782DEB8FA000200275 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74772DEB8F9B00200275 /* Segment.swift */; };
+		CE9A747A2DEB8FB600200275 /* SellerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74792DEB8FAF00200275 /* SellerResponse.swift */; };
+		CE9A747C2DEB8FC900200275 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A747B2DEB8FC200200275 /* SettingsModel.swift */; };
+		CE9A747E2DEB8FD800200275 /* SmartFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A747D2DEB8FD300200275 /* SmartFolder.swift */; };
+		CE9A74802DEB8FED00200275 /* SpatialAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A747F2DEB8FE300200275 /* SpatialAnalysis.swift */; };
+		CE9A74822DEB8FFF00200275 /* SystemModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74812DEB8FFB00200275 /* SystemModules.swift */; };
+		CE9A74842DEB901100200275 /* TaxBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74832DEB900B00200275 /* TaxBill.swift */; };
+		CE9A74862DEB903200200275 /* TaxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74852DEB902700200275 /* TaxManager.swift */; };
+		CE9A74882DEB904400200275 /* TemplateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74872DEB903C00200275 /* TemplateLibrary.swift */; };
+		CE9A748A2DEB905B00200275 /* TemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74892DEB905500200275 /* TemplateManager.swift */; };
+		CE9A748C2DEB907800200275 /* UserActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A748B2DEB907000200275 /* UserActivity.swift */; };
+		CE9A748E2DEB908D00200275 /* UserActivityLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A748D2DEB908500200275 /* UserActivityLog.swift */; };
+		CE9A74902DEB909D00200275 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A748F2DEB909900200275 /* Version.swift */; };
+		CE9A74922DEB90C200200275 /* WorkflowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74912DEB90B400200275 /* WorkflowEngine.swift */; };
+		CE9A74942DEB90D500200275 /* AutomationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74932DEB90CF00200275 /* AutomationSettings.swift */; };
+		CE9A74962DEB90FD00200275 /* AssistantObservationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74952DEB90FB00200275 /* AssistantObservationEngine.swift */; };
+		CE9A74992DEB915600200275 /* AssistantStrategicPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74982DEB914B00200275 /* AssistantStrategicPlanner.swift */; };
+		CE9A749B2DEB916D00200275 /* AssistantCommandInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A749A2DEB916300200275 /* AssistantCommandInterpreter.swift */; };
+		CE9A749D2DEB918700200275 /* AssistantExecutionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A749C2DEB917900200275 /* AssistantExecutionEngine.swift */; };
+		CE9A749F2DEB919D00200275 /* AssistantMemoryEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A749E2DEB919300200275 /* AssistantMemoryEngine.swift */; };
+		CE9A74A12DEB91B100200275 /* AssistantSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74A02DEB91AA00200275 /* AssistantSettings.swift */; };
+		CE9A74A32DEB91F200200275 /* AssistantBusinessDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74A22DEB91E700200275 /* AssistantBusinessDashboard.swift */; };
+		CE9A74A52DEB922300200275 /* AssistantContextMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74A42DEB91FF00200275 /* AssistantContextMonitor.swift */; };
+		CE9A74A72DEB923C00200275 /* AssistantAutomationToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74A62DEB922E00200275 /* AssistantAutomationToggles.swift */; };
+		CE9A74A92DEB925200200275 /* AssistantActionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74A82DEB924700200275 /* AssistantActionRouter.swift */; };
+		CE9A74AB2DEB926B00200275 /* AssistantIntegrationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74AA2DEB925F00200275 /* AssistantIntegrationCenter.swift */; };
+		CE9A74AD2DEB929A00200275 /* AssistantSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74AC2DEB928600200275 /* AssistantSettingsView.swift */; };
+		CE9A74B02DEB931000200275 /* AssistantMemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74AF2DEB930900200275 /* AssistantMemoryView.swift */; };
+		CE9A74B22DEB932A00200275 /* AssistantDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74B12DEB932200200275 /* AssistantDashboardView.swift */; };
+		CE9A74B42DEB945600200275 /* OfferLetterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74B32DEB944B00200275 /* OfferLetterGenerator.swift */; };
+		CE9A74B62DEB954F00200275 /* AssistantPersona.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74B52DEB953E00200275 /* AssistantPersona.swift */; };
+		CE9A74B82DEB956D00200275 /* AssistantPersonaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74B72DEB955B00200275 /* AssistantPersonaManager.swift */; };
+		CE9A74BA2DEB98F900200275 /* AssistantCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74B92DEB98F600200275 /* AssistantCommand.swift */; };
+		CE9A74BD2DEB99E200200275 /* AssistantPortfolioInsightEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74BC2DEB99C800200275 /* AssistantPortfolioInsightEngine.swift */; };
+		CE9A74BF2DEB9A1800200275 /* AssistantContextObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74BE2DEB9A0D00200275 /* AssistantContextObserver.swift */; };
+		CE9A74C12DEB9A3500200275 /* AssistantAdaptiveFlowEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74C02DEB9A2800200275 /* AssistantAdaptiveFlowEngine.swift */; };
+		CE9A74C32DEB9A7B00200275 /* AssistantDueDiligenceOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74C22DEB9A5C00200275 /* AssistantDueDiligenceOrchestrator.swift */; };
+		CE9A74C52DEB9AA200200275 /* VirtualMailboxIntegrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74C42DEB9A9500200275 /* VirtualMailboxIntegrationManager.swift */; };
+		CE9A74C72DEB9ABD00200275 /* AssistantMailClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74C62DEB9AB400200275 /* AssistantMailClassifier.swift */; };
+		CE9A74C92DEB9B1200200275 /* AssistantPortfolioStrategist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74C82DEB9B0D00200275 /* AssistantPortfolioStrategist.swift */; };
+		CE9A74CB2DEB9B3100200275 /* LeadInquiryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74CA2DEB9B2600200275 /* LeadInquiryRouter.swift */; };
+		CE9A74CD2DEB9B5E00200275 /* TaxPaymentWorkflowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74CC2DEB9B4A00200275 /* TaxPaymentWorkflowManager.swift */; };
+		CE9A74CF2DEB9B9400200275 /* AssistantContactInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74CE2DEB9B8000200275 /* AssistantContactInbox.swift */; };
+		CE9A74D12DEB9BB000200275 /* PortfolioTaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74D02DEB9BA700200275 /* PortfolioTaxView.swift */; };
+		CE9A74D32DEB9D2800200275 /* ScannedMailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74D22DEB9D1200200275 /* ScannedMailItem.swift */; };
+		CE9A74D52DEB9D3600200275 /* MailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74D42DEB9D3100200275 /* MailAction.swift */; };
+		CE9A74D72DEB9D4700200275 /* MailProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74D62DEB9D4000200275 /* MailProcessingEngine.swift */; };
+		CE9A74D92DEB9D6500200275 /* VirtualMailboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74D82DEB9D5800200275 /* VirtualMailboxService.swift */; };
+		CE9A74DB2DEB9DB900200275 /* MailReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74DA2DEB9DAC00200275 /* MailReviewView.swift */; };
+		CE9A74DD2DEB9F9000200275 /* AutomationControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A74DC2DEB9F8300200275 /* AutomationControlPanel.swift */; };
+		CEC4DA842DBD323B0081ABCE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEC4DA832DBD323B0081ABCE /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F678EA1C62F1168CDC3C8ED /* Acreage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acreage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9A73B52DE9EA7F00200275 /* AcreageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcreageApp.swift; sourceTree = "<group>"; };
+		CE9A73B62DE9EB8800200275 /* AssistantContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantContext.swift; sourceTree = "<group>"; };
+		CE9A73B72DE9EB9A00200275 /* AssistantContextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantContextManager.swift; sourceTree = "<group>"; };
+		CE9A73B82DE9EC7300200275 /* AutomationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationEngine.swift; sourceTree = "<group>"; };
+		CE9A73B92DE9ECB700200275 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CE9A73BA2DE9ECC700200275 /* CapitalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalManager.swift; sourceTree = "<group>"; };
+		CE9A73BB2DE9ED4700200275 /* Click2MailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click2MailService.swift; sourceTree = "<group>"; };
+		CE9A73BC2DE9ED6F00200275 /* ContactHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHandler.swift; sourceTree = "<group>"; };
+		CE9A73BD2DE9ED8200200275 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE9A73BE2DE9EDA000200275 /* CRMRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRMRecord.swift; sourceTree = "<group>"; };
+		CE9A73BF2DE9EDAC00200275 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		CE9A73C02DE9EDC800200275 /* DueDiligenceChecklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDiligenceChecklist.swift; sourceTree = "<group>"; };
+		CE9A73C12DEB500D00200275 /* EmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailService.swift; sourceTree = "<group>"; };
+		CE9A73C22DEB502B00200275 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+		CE9A73C32DEB504500200275 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		CE9A73C42DEB505600200275 /* GeoLocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationHelper.swift; sourceTree = "<group>"; };
+		CE9A73C52DEB506B00200275 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CE9A73C62DEB507D00200275 /* LabelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFormatter.swift; sourceTree = "<group>"; };
+		CE9A73C72DEB509400200275 /* LandResearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandResearchService.swift; sourceTree = "<group>"; };
+		CE9A73C82DEB50A900200275 /* LegalTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalTemplate.swift; sourceTree = "<group>"; };
+		CE9A73C92DEB50C800200275 /* MailServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailServiceProvider.swift; sourceTree = "<group>"; };
+		CE9A73CA2DEB50DD00200275 /* MailingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailingLabel.swift; sourceTree = "<group>"; };
+		CE9A73CB2DEB50F600200275 /* MapSnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSnapshotHelper.swift; sourceTree = "<group>"; };
+		CE9A73CC2DEB510600200275 /* MarketingCampaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingCampaign.swift; sourceTree = "<group>"; };
+		CE9A73CD2DEB512100200275 /* MarketingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingEngine.swift; sourceTree = "<group>"; };
+		CE9A73CE2DEB513600200275 /* VirtualMailboxProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualMailboxProvider.swift; sourceTree = "<group>"; };
+		CE9A73CF2DEB518900200275 /* VirtualMailboxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualMailboxManager.swift; sourceTree = "<group>"; };
+		CE9A73D02DEB51A300200275 /* InboundMailRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboundMailRecord.swift; sourceTree = "<group>"; };
+		CE9A73D12DEB51DA00200275 /* CampaignDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignDetailView.swift; sourceTree = "<group>"; };
+		CE9A73D22DEB51EA00200275 /* CampaignRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignRowView.swift; sourceTree = "<group>"; };
+		CE9A73D32DEB520400200275 /* CampaignsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignsView.swift; sourceTree = "<group>"; };
+		CE9A73D42DEB521C00200275 /* CampaignManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignManager.swift; sourceTree = "<group>"; };
+		CE9A73D52DEB524D00200275 /* DocumentTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTemplate.swift; sourceTree = "<group>"; };
+		CE9A73D62DEB526800200275 /* DocumentTemplateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTemplateManager.swift; sourceTree = "<group>"; };
+		CE9A73D72DEB527F00200275 /* DefaultTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTemplates.swift; sourceTree = "<group>"; };
+		CE9A73D82DEB529900200275 /* DocumentFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentFormatter.swift; sourceTree = "<group>"; };
+		CE9A73D92DEB52D700200275 /* DocumentPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPreviewView.swift; sourceTree = "<group>"; };
+		CE9A73DA2DEB52FA00200275 /* PDFExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExporter.swift; sourceTree = "<group>"; };
+		CE9A73DB2DEB530F00200275 /* MailingLabelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailingLabelFormatter.swift; sourceTree = "<group>"; };
+		CE9A73DC2DEB532300200275 /* PrintUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintUtilities.swift; sourceTree = "<group>"; };
+		CE9A73DD2DEB534E00200275 /* MailAutomationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAutomationSettings.swift; sourceTree = "<group>"; };
+		CE9A73DE2DEB536A00200275 /* PrintFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintFormat.swift; sourceTree = "<group>"; };
+		CE9A73DF2DEB538000200275 /* MailCampaignEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCampaignEngine.swift; sourceTree = "<group>"; };
+		CE9A73E02DEB53BE00200275 /* MailIntegrationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailIntegrationAPI.swift; sourceTree = "<group>"; };
+		CE9A740D2DEB55B500200275 /* AutomationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationSettingsView.swift; sourceTree = "<group>"; };
+		CE9A740F2DEB560000200275 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CE9A74112DEB564700200275 /* AutomationSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationSettingsManager.swift; sourceTree = "<group>"; };
+		CE9A74132DEB566A00200275 /* MarketingRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingRecord.swift; sourceTree = "<group>"; };
+		CE9A74152DEB577400200275 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CE9A74172DEB578B00200275 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
+		CE9A74192DEB57A200200275 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CE9A741B2DEB57EF00200275 /* OpenAIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIConfig.swift; sourceTree = "<group>"; };
+		CE9A741D2DEB582200200275 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		CE9A741F2DEB583500200275 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		CE9A74212DEB584700200275 /* PDFExportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExportHelper.swift; sourceTree = "<group>"; };
+		CE9A74232DEB585F00200275 /* ParcelMapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelMapOverlay.swift; sourceTree = "<group>"; };
+		CE9A74252DEB587100200275 /* ParcelMapOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelMapOverlayView.swift; sourceTree = "<group>"; };
+		CE9A74272DEB588900200275 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		CE9A74292DEB58A700200275 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		CE9A742B2DEB58BD00200275 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		CE9A742D2DEB58CC00200275 /* PipelineStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineStage.swift; sourceTree = "<group>"; };
+		CE9A742F2DEB58DE00200275 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		CE9A74312DEB58EF00200275 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		CE9A74332DEB590600200275 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		CE9A74352DEB591600200275 /* PreferencesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesManager.swift; sourceTree = "<group>"; };
+		CE9A74372DEB845800200275 /* PrintEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintEngine.swift; sourceTree = "<group>"; };
+		CE9A74392DEB84A500200275 /* PrintSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintSettings.swift; sourceTree = "<group>"; };
+		CE9A743B2DEB84BF00200275 /* PrintSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintSettingsManager.swift; sourceTree = "<group>"; };
+		CE9A743D2DEB84DB00200275 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		CE9A743F2DEB84EF00200275 /* PropertyAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnalyzer.swift; sourceTree = "<group>"; };
+		CE9A74412DEB852F00200275 /* PropertyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCard.swift; sourceTree = "<group>"; };
+		CE9A74432DEB856100200275 /* PropertyContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyContextMenu.swift; sourceTree = "<group>"; };
+		CE9A74452DEB858700200275 /* PropertyDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDashboard.swift; sourceTree = "<group>"; };
+		CE9A74472DEB859C00200275 /* PropertyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyMapView.swift; sourceTree = "<group>"; };
+		CE9A74492DEB85BA00200275 /* PropertyOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyOverlay.swift; sourceTree = "<group>"; };
+		CE9A744B2DEB85D300200275 /* PropertyOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyOverlayView.swift; sourceTree = "<group>"; };
+		CE9A744D2DEB85E700200275 /* PropertyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyRow.swift; sourceTree = "<group>"; };
+		CE9A744F2DEB85F900200275 /* PropertySearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertySearchBar.swift; sourceTree = "<group>"; };
+		CE9A74512DEB867900200275 /* PropertySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertySelectionView.swift; sourceTree = "<group>"; };
+		CE9A74532DEB869600200275 /* PurchaseAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseAnalyzer.swift; sourceTree = "<group>"; };
+		CE9A74552DEB86AF00200275 /* PurchaseFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseFlow.swift; sourceTree = "<group>"; };
+		CE9A74572DEB86C700200275 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		CE9A74592DEB86DB00200275 /* PurchaseReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseReviewView.swift; sourceTree = "<group>"; };
+		CE9A745B2DEB86F200200275 /* ReceiptParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptParser.swift; sourceTree = "<group>"; };
+		CE9A745D2DEB874E00200275 /* ReferralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralManager.swift; sourceTree = "<group>"; };
+		CE9A745F2DEB8E2A00200275 /* RefundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefundManager.swift; sourceTree = "<group>"; };
+		CE9A74612DEB8E3A00200275 /* RelationshipType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipType.swift; sourceTree = "<group>"; };
+		CE9A74632DEB8E5A00200275 /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		CE9A74652DEB8E6A00200275 /* ReportGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportGenerator.swift; sourceTree = "<group>"; };
+		CE9A74672DEB8E8300200275 /* ResellerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResellerInfo.swift; sourceTree = "<group>"; };
+		CE9A74692DEB8EBE00200275 /* ResourceLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLink.swift; sourceTree = "<group>"; };
+		CE9A746B2DEB8ED900200275 /* ReturnMailHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnMailHandler.swift; sourceTree = "<group>"; };
+		CE9A746D2DEB8EED00200275 /* ROITracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROITracker.swift; sourceTree = "<group>"; };
+		CE9A746F2DEB8F0100200275 /* SalesChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesChannel.swift; sourceTree = "<group>"; };
+		CE9A74712DEB8F1400200275 /* SalesHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesHistory.swift; sourceTree = "<group>"; };
+		CE9A74732DEB8F2600200275 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		CE9A74752DEB8F7A00200275 /* ScriptedAutomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptedAutomation.swift; sourceTree = "<group>"; };
+		CE9A74772DEB8F9B00200275 /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		CE9A74792DEB8FAF00200275 /* SellerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerResponse.swift; sourceTree = "<group>"; };
+		CE9A747B2DEB8FC200200275 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		CE9A747D2DEB8FD300200275 /* SmartFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFolder.swift; sourceTree = "<group>"; };
+		CE9A747F2DEB8FE300200275 /* SpatialAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialAnalysis.swift; sourceTree = "<group>"; };
+		CE9A74812DEB8FFB00200275 /* SystemModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemModules.swift; sourceTree = "<group>"; };
+		CE9A74832DEB900B00200275 /* TaxBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxBill.swift; sourceTree = "<group>"; };
+		CE9A74852DEB902700200275 /* TaxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxManager.swift; sourceTree = "<group>"; };
+		CE9A74872DEB903C00200275 /* TemplateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateLibrary.swift; sourceTree = "<group>"; };
+		CE9A74892DEB905500200275 /* TemplateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateManager.swift; sourceTree = "<group>"; };
+		CE9A748B2DEB907000200275 /* UserActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActivity.swift; sourceTree = "<group>"; };
+		CE9A748D2DEB908500200275 /* UserActivityLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActivityLog.swift; sourceTree = "<group>"; };
+		CE9A748F2DEB909900200275 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		CE9A74912DEB90B400200275 /* WorkflowEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowEngine.swift; sourceTree = "<group>"; };
+		CE9A74932DEB90CF00200275 /* AutomationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationSettings.swift; sourceTree = "<group>"; };
+		CE9A74952DEB90FB00200275 /* AssistantObservationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantObservationEngine.swift; sourceTree = "<group>"; };
+		CE9A74972DEB911600200275 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE9A74982DEB914B00200275 /* AssistantStrategicPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantStrategicPlanner.swift; sourceTree = "<group>"; };
+		CE9A749A2DEB916300200275 /* AssistantCommandInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantCommandInterpreter.swift; sourceTree = "<group>"; };
+		CE9A749C2DEB917900200275 /* AssistantExecutionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantExecutionEngine.swift; sourceTree = "<group>"; };
+		CE9A749E2DEB919300200275 /* AssistantMemoryEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantMemoryEngine.swift; sourceTree = "<group>"; };
+		CE9A74A02DEB91AA00200275 /* AssistantSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantSettings.swift; sourceTree = "<group>"; };
+		CE9A74A22DEB91E700200275 /* AssistantBusinessDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantBusinessDashboard.swift; sourceTree = "<group>"; };
+		CE9A74A42DEB91FF00200275 /* AssistantContextMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantContextMonitor.swift; sourceTree = "<group>"; };
+		CE9A74A62DEB922E00200275 /* AssistantAutomationToggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAutomationToggles.swift; sourceTree = "<group>"; };
+		CE9A74A82DEB924700200275 /* AssistantActionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantActionRouter.swift; sourceTree = "<group>"; };
+		CE9A74AA2DEB925F00200275 /* AssistantIntegrationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantIntegrationCenter.swift; sourceTree = "<group>"; };
+		CE9A74AC2DEB928600200275 /* AssistantSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantSettingsView.swift; sourceTree = "<group>"; };
+		CE9A74AE2DEB92A600200275 /* .swift */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swift; sourceTree = "<group>"; };
+		CE9A74AF2DEB930900200275 /* AssistantMemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantMemoryView.swift; sourceTree = "<group>"; };
+		CE9A74B12DEB932200200275 /* AssistantDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantDashboardView.swift; sourceTree = "<group>"; };
+		CE9A74B32DEB944B00200275 /* OfferLetterGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferLetterGenerator.swift; sourceTree = "<group>"; };
+		CE9A74B52DEB953E00200275 /* AssistantPersona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantPersona.swift; sourceTree = "<group>"; };
+		CE9A74B72DEB955B00200275 /* AssistantPersonaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantPersonaManager.swift; sourceTree = "<group>"; };
+		CE9A74B92DEB98F600200275 /* AssistantCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantCommand.swift; sourceTree = "<group>"; };
+		CE9A74BB2DEB990C00200275 /* CapitalTaxPaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalTaxPaymentHandler.swift; sourceTree = "<group>"; };
+		CE9A74BC2DEB99C800200275 /* AssistantPortfolioInsightEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantPortfolioInsightEngine.swift; sourceTree = "<group>"; };
+		CE9A74BE2DEB9A0D00200275 /* AssistantContextObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantContextObserver.swift; sourceTree = "<group>"; };
+		CE9A74C02DEB9A2800200275 /* AssistantAdaptiveFlowEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantAdaptiveFlowEngine.swift; sourceTree = "<group>"; };
+		CE9A74C22DEB9A5C00200275 /* AssistantDueDiligenceOrchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantDueDiligenceOrchestrator.swift; sourceTree = "<group>"; };
+		CE9A74C42DEB9A9500200275 /* VirtualMailboxIntegrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualMailboxIntegrationManager.swift; sourceTree = "<group>"; };
+		CE9A74C62DEB9AB400200275 /* AssistantMailClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantMailClassifier.swift; sourceTree = "<group>"; };
+		CE9A74C82DEB9B0D00200275 /* AssistantPortfolioStrategist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantPortfolioStrategist.swift; sourceTree = "<group>"; };
+		CE9A74CA2DEB9B2600200275 /* LeadInquiryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadInquiryRouter.swift; sourceTree = "<group>"; };
+		CE9A74CC2DEB9B4A00200275 /* TaxPaymentWorkflowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxPaymentWorkflowManager.swift; sourceTree = "<group>"; };
+		CE9A74CE2DEB9B8000200275 /* AssistantContactInbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantContactInbox.swift; sourceTree = "<group>"; };
+		CE9A74D02DEB9BA700200275 /* PortfolioTaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTaxView.swift; sourceTree = "<group>"; };
+		CE9A74D22DEB9D1200200275 /* ScannedMailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedMailItem.swift; sourceTree = "<group>"; };
+		CE9A74D42DEB9D3100200275 /* MailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAction.swift; sourceTree = "<group>"; };
+		CE9A74D62DEB9D4000200275 /* MailProcessingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailProcessingEngine.swift; sourceTree = "<group>"; };
+		CE9A74D82DEB9D5800200275 /* VirtualMailboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualMailboxService.swift; sourceTree = "<group>"; };
+		CE9A74DA2DEB9DAC00200275 /* MailReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailReviewView.swift; sourceTree = "<group>"; };
+		CE9A74DC2DEB9F8300200275 /* AutomationControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationControlPanel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC4DA7B2DBD2BBC0081ABCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC4DA842DBD323B0081ABCE /* Alamofire in Frameworks */,
+				CE6DAAC62DE3FF29005B9A8E /* Lottie in Frameworks */,
+				CE6DAAC82DE3FF29005B9A8E /* Lottie-Dynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74C3667A1C700223C9F6358E = {
+			isa = PBXGroup;
+			children = (
+				CE9A74AE2DEB92A600200275 /* .swift */,
+				CE9A73B52DE9EA7F00200275 /* AcreageApp.swift */,
+				CE9A74A82DEB924700200275 /* AssistantActionRouter.swift */,
+				CE9A74C02DEB9A2800200275 /* AssistantAdaptiveFlowEngine.swift */,
+				CE9A74A62DEB922E00200275 /* AssistantAutomationToggles.swift */,
+				CE9A74A22DEB91E700200275 /* AssistantBusinessDashboard.swift */,
+				CE9A74B92DEB98F600200275 /* AssistantCommand.swift */,
+				CE9A749A2DEB916300200275 /* AssistantCommandInterpreter.swift */,
+				CE9A74CE2DEB9B8000200275 /* AssistantContactInbox.swift */,
+				CE9A73B62DE9EB8800200275 /* AssistantContext.swift */,
+				CE9A73B72DE9EB9A00200275 /* AssistantContextManager.swift */,
+				CE9A74A42DEB91FF00200275 /* AssistantContextMonitor.swift */,
+				CE9A74BE2DEB9A0D00200275 /* AssistantContextObserver.swift */,
+				CE9A74DC2DEB9F8300200275 /* AutomationControlPanel.swift */,
+				CE9A74B12DEB932200200275 /* AssistantDashboardView.swift */,
+				CE9A74C22DEB9A5C00200275 /* AssistantDueDiligenceOrchestrator.swift */,
+				CE9A749C2DEB917900200275 /* AssistantExecutionEngine.swift */,
+				CE9A74AA2DEB925F00200275 /* AssistantIntegrationCenter.swift */,
+				CE9A74C62DEB9AB400200275 /* AssistantMailClassifier.swift */,
+				CE9A749E2DEB919300200275 /* AssistantMemoryEngine.swift */,
+				CE9A74AF2DEB930900200275 /* AssistantMemoryView.swift */,
+				CE9A74952DEB90FB00200275 /* AssistantObservationEngine.swift */,
+				CE9A74B52DEB953E00200275 /* AssistantPersona.swift */,
+				CE9A74B72DEB955B00200275 /* AssistantPersonaManager.swift */,
+				CE9A74BC2DEB99C800200275 /* AssistantPortfolioInsightEngine.swift */,
+				CE9A74C82DEB9B0D00200275 /* AssistantPortfolioStrategist.swift */,
+				CE9A74A02DEB91AA00200275 /* AssistantSettings.swift */,
+				CE9A74AC2DEB928600200275 /* AssistantSettingsView.swift */,
+				CE9A74982DEB914B00200275 /* AssistantStrategicPlanner.swift */,
+				CE9A73B92DE9ECB700200275 /* AuthManager.swift */,
+				CE9A73B82DE9EC7300200275 /* AutomationEngine.swift */,
+				CE9A74932DEB90CF00200275 /* AutomationSettings.swift */,
+				CE9A74112DEB564700200275 /* AutomationSettingsManager.swift */,
+				CE9A740D2DEB55B500200275 /* AutomationSettingsView.swift */,
+				CE9A73D12DEB51DA00200275 /* CampaignDetailView.swift */,
+				CE9A73D42DEB521C00200275 /* CampaignManager.swift */,
+				CE9A73D22DEB51EA00200275 /* CampaignRowView.swift */,
+				CE9A73D32DEB520400200275 /* CampaignsView.swift */,
+				CE9A73BA2DE9ECC700200275 /* CapitalManager.swift */,
+				CE9A74BB2DEB990C00200275 /* CapitalTaxPaymentHandler.swift */,
+				CE9A73BB2DE9ED4700200275 /* Click2MailService.swift */,
+				CE9A73BC2DE9ED6F00200275 /* ContactHandler.swift */,
+				CE9A73BD2DE9ED8200200275 /* ContentView.swift */,
+				CE9A73BE2DE9EDA000200275 /* CRMRecord.swift */,
+				CE9A73BF2DE9EDAC00200275 /* DashboardView.swift */,
+				CE9A73D72DEB527F00200275 /* DefaultTemplates.swift */,
+				CE9A73D82DEB529900200275 /* DocumentFormatter.swift */,
+				CE9A73D92DEB52D700200275 /* DocumentPreviewView.swift */,
+				CE9A73D52DEB524D00200275 /* DocumentTemplate.swift */,
+				CE9A73D62DEB526800200275 /* DocumentTemplateManager.swift */,
+				CE9A73C02DE9EDC800200275 /* DueDiligenceChecklist.swift */,
+				CE9A73C12DEB500D00200275 /* EmailService.swift */,
+				CE9A73C22DEB502B00200275 /* FileManagerHelper.swift */,
+				CE9A73C32DEB504500200275 /* FormField.swift */,
+				CEC4DA7C2DBD2BD90081ABCE /* Frameworks */,
+				CE9A73C42DEB505600200275 /* GeoLocationHelper.swift */,
+				CE9A73C52DEB506B00200275 /* ImagePicker.swift */,
+				CE9A73D02DEB51A300200275 /* InboundMailRecord.swift */,
+				CE9A73C62DEB507D00200275 /* LabelFormatter.swift */,
+				CE9A73C72DEB509400200275 /* LandResearchService.swift */,
+				CE9A74CA2DEB9B2600200275 /* LeadInquiryRouter.swift */,
+				CE9A73C82DEB50A900200275 /* LegalTemplate.swift */,
+				CE9A73DD2DEB534E00200275 /* MailAutomationSettings.swift */,
+				CE9A73DF2DEB538000200275 /* MailCampaignEngine.swift */,
+				CE9A73CA2DEB50DD00200275 /* MailingLabel.swift */,
+				CE9A73DB2DEB530F00200275 /* MailingLabelFormatter.swift */,
+				CE9A73E02DEB53BE00200275 /* MailIntegrationAPI.swift */,
+				CE9A73C92DEB50C800200275 /* MailServiceProvider.swift */,
+				CE9A73CB2DEB50F600200275 /* MapSnapshotHelper.swift */,
+				CE9A73CC2DEB510600200275 /* MarketingCampaign.swift */,
+				CE9A73CD2DEB512100200275 /* MarketingEngine.swift */,
+				CE9A74132DEB566A00200275 /* MarketingRecord.swift */,
+				CE9A74152DEB577400200275 /* Note.swift */,
+				CE9A74172DEB578B00200275 /* NotificationsManager.swift */,
+				CE9A74B32DEB944B00200275 /* OfferLetterGenerator.swift */,
+				CE9A74192DEB57A200200275 /* OnboardingView.swift */,
+				CE9A741B2DEB57EF00200275 /* OpenAIConfig.swift */,
+				CE9A741D2DEB582200200275 /* Organization.swift */,
+				CE9A741F2DEB583500200275 /* Owner.swift */,
+				CE9A74232DEB585F00200275 /* ParcelMapOverlay.swift */,
+				CE9A74252DEB587100200275 /* ParcelMapOverlayView.swift */,
+				CE9A73DA2DEB52FA00200275 /* PDFExporter.swift */,
+				CE9A74212DEB584700200275 /* PDFExportHelper.swift */,
+				CE9A74272DEB588900200275 /* PersistenceController.swift */,
+				CE9A74292DEB58A700200275 /* PersistenceManager.swift */,
+				CE9A742B2DEB58BD00200275 /* Phase.swift */,
+				CE9A742D2DEB58CC00200275 /* PipelineStage.swift */,
+				CE9A742F2DEB58DE00200275 /* Portfolio.swift */,
+				CE9A74D02DEB9BA700200275 /* PortfolioTaxView.swift */,
+				CE9A74312DEB58EF00200275 /* PortfolioView.swift */,
+				CE9A74332DEB590600200275 /* Preferences.swift */,
+				CE9A74352DEB591600200275 /* PreferencesManager.swift */,
+				CE9A74372DEB845800200275 /* PrintEngine.swift */,
+				CE9A73DE2DEB536A00200275 /* PrintFormat.swift */,
+				CE9A74392DEB84A500200275 /* PrintSettings.swift */,
+				CE9A743B2DEB84BF00200275 /* PrintSettingsManager.swift */,
+				CE9A73DC2DEB532300200275 /* PrintUtilities.swift */,
+				7876C707BA7EEF8D964252E5 /* Products */,
+				CE9A743D2DEB84DB00200275 /* Property.swift */,
+				CE9A743F2DEB84EF00200275 /* PropertyAnalyzer.swift */,
+				CE9A74412DEB852F00200275 /* PropertyCard.swift */,
+				CE9A74432DEB856100200275 /* PropertyContextMenu.swift */,
+				CE9A74452DEB858700200275 /* PropertyDashboard.swift */,
+				CE9A74472DEB859C00200275 /* PropertyMapView.swift */,
+				CE9A74492DEB85BA00200275 /* PropertyOverlay.swift */,
+				CE9A744B2DEB85D300200275 /* PropertyOverlayView.swift */,
+				CE9A744D2DEB85E700200275 /* PropertyRow.swift */,
+				CE9A744F2DEB85F900200275 /* PropertySearchBar.swift */,
+				CE9A74512DEB867900200275 /* PropertySelectionView.swift */,
+				CE9A74532DEB869600200275 /* PurchaseAnalyzer.swift */,
+				CE9A74552DEB86AF00200275 /* PurchaseFlow.swift */,
+				CE9A74572DEB86C700200275 /* PurchaseManager.swift */,
+				CE9A74592DEB86DB00200275 /* PurchaseReviewView.swift */,
+				CE9A74972DEB911600200275 /* README.md */,
+				CE9A745B2DEB86F200200275 /* ReceiptParser.swift */,
+				CE9A745D2DEB874E00200275 /* ReferralManager.swift */,
+				CE9A745F2DEB8E2A00200275 /* RefundManager.swift */,
+				CE9A74612DEB8E3A00200275 /* RelationshipType.swift */,
+				CE9A74632DEB8E5A00200275 /* ReminderManager.swift */,
+				CE9A74652DEB8E6A00200275 /* ReportGenerator.swift */,
+				CE9A74672DEB8E8300200275 /* ResellerInfo.swift */,
+				CE9A74692DEB8EBE00200275 /* ResourceLink.swift */,
+				CE9A746B2DEB8ED900200275 /* ReturnMailHandler.swift */,
+				CE9A746D2DEB8EED00200275 /* ROITracker.swift */,
+				CE9A746F2DEB8F0100200275 /* SalesChannel.swift */,
+				CE9A74712DEB8F1400200275 /* SalesHistory.swift */,
+				CE9A74732DEB8F2600200275 /* Scheduler.swift */,
+				CE9A74752DEB8F7A00200275 /* ScriptedAutomation.swift */,
+				CE9A74772DEB8F9B00200275 /* Segment.swift */,
+				CE9A74792DEB8FAF00200275 /* SellerResponse.swift */,
+				CE9A747B2DEB8FC200200275 /* SettingsModel.swift */,
+				CE9A740F2DEB560000200275 /* SettingsView.swift */,
+				CE9A747D2DEB8FD300200275 /* SmartFolder.swift */,
+				CE9A747F2DEB8FE300200275 /* SpatialAnalysis.swift */,
+				CE9A74812DEB8FFB00200275 /* SystemModules.swift */,
+				CE9A74832DEB900B00200275 /* TaxBill.swift */,
+				CE9A74852DEB902700200275 /* TaxManager.swift */,
+				CE9A74CC2DEB9B4A00200275 /* TaxPaymentWorkflowManager.swift */,
+				CE9A74872DEB903C00200275 /* TemplateLibrary.swift */,
+				CE9A74892DEB905500200275 /* TemplateManager.swift */,
+				CE9A748B2DEB907000200275 /* UserActivity.swift */,
+				CE9A748D2DEB908500200275 /* UserActivityLog.swift */,
+				CE9A748F2DEB909900200275 /* Version.swift */,
+				CE9A74C42DEB9A9500200275 /* VirtualMailboxIntegrationManager.swift */,
+				CE9A73CF2DEB518900200275 /* VirtualMailboxManager.swift */,
+				CE9A73CE2DEB513600200275 /* VirtualMailboxProvider.swift */,
+				CE9A74D82DEB9D5800200275 /* VirtualMailboxService.swift */,
+				CE9A74912DEB90B400200275 /* WorkflowEngine.swift */,
+				CE9A74D22DEB9D1200200275 /* ScannedMailItem.swift */,
+				CE9A74D42DEB9D3100200275 /* MailAction.swift */,
+				CE9A74D62DEB9D4000200275 /* MailProcessingEngine.swift */,
+				CE9A74DA2DEB9DAC00200275 /* MailReviewView.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		7876C707BA7EEF8D964252E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F678EA1C62F1168CDC3C8ED /* Acreage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC4DA7C2DBD2BD90081ABCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C17ADBEA953E46581AE53D7D /* Acreage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 950772D9ACA7E5E71D651868 /* Build configuration list for PBXNativeTarget "Acreage" */;
+			buildPhases = (
+				AEC327BEDD222E7AB56B84E8 /* Sources */,
+				CEC4DA7B2DBD2BBC0081ABCE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE6DAACA2DE3FF5E005B9A8E /* PBXTargetDependency */,
+				CEC4DA882DBD32470081ABCE /* PBXTargetDependency */,
+			);
+			name = Acreage;
+			packageProductDependencies = (
+				CEC4DA832DBD323B0081ABCE /* Alamofire */,
+				CE6DAAC52DE3FF29005B9A8E /* Lottie */,
+				CE6DAAC72DE3FF29005B9A8E /* Lottie-Dynamic */,
+			);
+			productName = Acreage;
+			productReference = 4F678EA1C62F1168CDC3C8ED /* Acreage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526537483B64ABEA21D03A49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1630;
+			};
+			buildConfigurationList = 7438636A571C488957A1151A /* Build configuration list for PBXProject "Acreage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 74C3667A1C700223C9F6358E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CEC4DA822DBD323B0081ABCE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE6DAAC42DE3FF29005B9A8E /* XCLocalSwiftPackageReference "../../../../Downloads/lottie-ios-master" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C17ADBEA953E46581AE53D7D /* Acreage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEC327BEDD222E7AB56B84E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9A74462DEB858F00200275 /* PropertyDashboard.swift in Sources */,
+				CE9A73FE2DEB551300200275 /* FormField.swift in Sources */,
+				CE9A744C2DEB85DC00200275 /* PropertyOverlayView.swift in Sources */,
+				CE9A74B62DEB954F00200275 /* AssistantPersona.swift in Sources */,
+				CE9A74A92DEB925200200275 /* AssistantActionRouter.swift in Sources */,
+				CE9A74C92DEB9B1200200275 /* AssistantPortfolioStrategist.swift in Sources */,
+				CE9A742E2DEB58D300200275 /* PipelineStage.swift in Sources */,
+				CE9A74102DEB560600200275 /* SettingsView.swift in Sources */,
+				CE9A749D2DEB918700200275 /* AssistantExecutionEngine.swift in Sources */,
+				CE9A73F92DEB54B700200275 /* LegalTemplate.swift in Sources */,
+				CE9A74062DEB553E00200275 /* Click2MailService.swift in Sources */,
+				CE9A74DB2DEB9DB900200275 /* MailReviewView.swift in Sources */,
+				CE9A74D72DEB9D4700200275 /* MailProcessingEngine.swift in Sources */,
+				CE9A73EC2DEB543500200275 /* DocumentTemplate.swift in Sources */,
+				CE9A73F52DEB549400200275 /* MarketingCampaign.swift in Sources */,
+				CE9A74862DEB903200200275 /* TaxManager.swift in Sources */,
+				CE9A74742DEB8F3B00200275 /* Scheduler.swift in Sources */,
+				CE9A74642DEB8E5F00200275 /* ReminderManager.swift in Sources */,
+				CE9A74482DEB85AA00200275 /* PropertyMapView.swift in Sources */,
+				CE9A74422DEB853500200275 /* PropertyCard.swift in Sources */,
+				CE9A74A52DEB922300200275 /* AssistantContextMonitor.swift in Sources */,
+				CE9A74562DEB86B600200275 /* PurchaseFlow.swift in Sources */,
+				CE9A73FD2DEB550E00200275 /* GeoLocationHelper.swift in Sources */,
+				CE9A73FA2DEB54BC00200275 /* LandResearchService.swift in Sources */,
+				CE9A741E2DEB582B00200275 /* Organization.swift in Sources */,
+				CE9A74922DEB90C200200275 /* WorkflowEngine.swift in Sources */,
+				CE9A74002DEB551D00200275 /* EmailService.swift in Sources */,
+				CE9A743A2DEB84A800200275 /* PrintSettings.swift in Sources */,
+				CE9A740E2DEB55D300200275 /* AutomationSettingsView.swift in Sources */,
+				CE9A741C2DEB57F600200275 /* OpenAIConfig.swift in Sources */,
+				CE9A74BD2DEB99E200200275 /* AssistantPortfolioInsightEngine.swift in Sources */,
+				CE9A74722DEB8F1D00200275 /* SalesHistory.swift in Sources */,
+				CE9A740A2DEB555500200275 /* AssistantContextManager.swift in Sources */,
+				CE9A73F02DEB546900200275 /* CampaignDetailView.swift in Sources */,
+				CE9A74402DEB852300200275 /* PropertyAnalyzer.swift in Sources */,
+				CE9A74082DEB554B00200275 /* AuthManager.swift in Sources */,
+				CE9A745E2DEB876100200275 /* ReferralManager.swift in Sources */,
+				CE9A74442DEB857A00200275 /* PropertyContextMenu.swift in Sources */,
+				CE9A74322DEB58F500200275 /* PortfolioView.swift in Sources */,
+				CE9A74092DEB555000200275 /* AutomationEngine.swift in Sources */,
+				CE9A73FF2DEB551800200275 /* FileManagerHelper.swift in Sources */,
+				CE9A74AB2DEB926B00200275 /* AssistantIntegrationCenter.swift in Sources */,
+				CE9A74222DEB585200200275 /* PDFExportHelper.swift in Sources */,
+				CE9A74B82DEB956D00200275 /* AssistantPersonaManager.swift in Sources */,
+				CE9A74662DEB8E7500200275 /* ReportGenerator.swift in Sources */,
+				CE9A74762DEB8F8400200275 /* ScriptedAutomation.swift in Sources */,
+				CE9A74822DEB8FFF00200275 /* SystemModules.swift in Sources */,
+				CE9A747E2DEB8FD800200275 /* SmartFolder.swift in Sources */,
+				CE9A741A2DEB57B400200275 /* OnboardingView.swift in Sources */,
+				CE9A74522DEB868C00200275 /* PropertySelectionView.swift in Sources */,
+				CE9A73F82DEB54B100200275 /* MailServiceProvider.swift in Sources */,
+				CE9A747A2DEB8FB600200275 /* SellerResponse.swift in Sources */,
+				CE9A73E82DEB542100200275 /* DocumentPreviewView.swift in Sources */,
+				CE9A74302DEB58E300200275 /* Portfolio.swift in Sources */,
+				CE9A74D32DEB9D2800200275 /* ScannedMailItem.swift in Sources */,
+				CE9A73E42DEB540C00200275 /* MailAutomationSettings.swift in Sources */,
+				CE9A74D92DEB9D6500200275 /* VirtualMailboxService.swift in Sources */,
+				CE9A74802DEB8FED00200275 /* SpatialAnalysis.swift in Sources */,
+				CE9A744E2DEB85EE00200275 /* PropertyRow.swift in Sources */,
+				CE9A74D12DEB9BB000200275 /* PortfolioTaxView.swift in Sources */,
+				CE9A74DD2DEB9F9000200275 /* AutomationControlPanel.swift in Sources */,
+				CE9A74C12DEB9A3500200275 /* AssistantAdaptiveFlowEngine.swift in Sources */,
+				CE9A74D52DEB9D3600200275 /* MailAction.swift in Sources */,
+				CE9A74182DEB579600200275 /* NotificationsManager.swift in Sources */,
+				CE9A74BA2DEB98F900200275 /* AssistantCommand.swift in Sources */,
+				CE9A74142DEB573C00200275 /* MarketingRecord.swift in Sources */,
+				CE9A74B42DEB945600200275 /* OfferLetterGenerator.swift in Sources */,
+				CE9A740C2DEB556100200275 /* AcreageApp.swift in Sources */,
+				CE9A73E22DEB540200200275 /* MailCampaignEngine.swift in Sources */,
+				CE9A745C2DEB870000200275 /* ReceiptParser.swift in Sources */,
+				CE9A74AD2DEB929A00200275 /* AssistantSettingsView.swift in Sources */,
+				CE9A73E12DEB53E900200275 /* MailIntegrationAPI.swift in Sources */,
+				CE9A74342DEB590B00200275 /* Preferences.swift in Sources */,
+				CE9A749B2DEB916D00200275 /* AssistantCommandInterpreter.swift in Sources */,
+				CE9A74042DEB553300200275 /* ContentView.swift in Sources */,
+				CE9A74162DEB577A00200275 /* Note.swift in Sources */,
+				CE9A74012DEB552400200275 /* DueDiligenceChecklist.swift in Sources */,
+				CE9A74052DEB553800200275 /* ContactHandler.swift in Sources */,
+				CE9A74362DEB59A800200275 /* PreferencesManager.swift in Sources */,
+				CE9A740B2DEB555A00200275 /* AssistantContext.swift in Sources */,
+				CE9A74202DEB583B00200275 /* Owner.swift in Sources */,
+				CE9A747C2DEB8FC900200275 /* SettingsModel.swift in Sources */,
+				CE9A74C72DEB9ABD00200275 /* AssistantMailClassifier.swift in Sources */,
+				CE9A74C32DEB9A7B00200275 /* AssistantDueDiligenceOrchestrator.swift in Sources */,
+				CE9A73E92DEB542600200275 /* DocumentFormatter.swift in Sources */,
+				CE9A74262DEB587E00200275 /* ParcelMapOverlayView.swift in Sources */,
+				CE9A74582DEB86CD00200275 /* PurchaseManager.swift in Sources */,
+				CE9A74282DEB588F00200275 /* PersistenceController.swift in Sources */,
+				CE9A74542DEB86A000200275 /* PurchaseAnalyzer.swift in Sources */,
+				CE9A74A32DEB91F200200275 /* AssistantBusinessDashboard.swift in Sources */,
+				CE9A74602DEB8E2F00200275 /* RefundManager.swift in Sources */,
+				CE9A74C52DEB9AA200200275 /* VirtualMailboxIntegrationManager.swift in Sources */,
+				CE9A74BF2DEB9A1800200275 /* AssistantContextObserver.swift in Sources */,
+				CE9A74CF2DEB9B9400200275 /* AssistantContactInbox.swift in Sources */,
+				CE9A73F12DEB546F00200275 /* InboundMailRecord.swift in Sources */,
+				CE9A74942DEB90D500200275 /* AutomationSettings.swift in Sources */,
+				CE9A746C2DEB8EE000200275 /* ReturnMailHandler.swift in Sources */,
+				CE9A74682DEB8E8E00200275 /* ResellerInfo.swift in Sources */,
+				CE9A73F32DEB547A00200275 /* VirtualMailboxProvider.swift in Sources */,
+				CE9A749F2DEB919D00200275 /* AssistantMemoryEngine.swift in Sources */,
+				CE9A742A2DEB58B100200275 /* PersistenceManager.swift in Sources */,
+				CE9A73E62DEB541700200275 /* MailingLabelFormatter.swift in Sources */,
+				CE9A748C2DEB907800200275 /* UserActivity.swift in Sources */,
+				CE9A73EF2DEB546400200275 /* CampaignRowView.swift in Sources */,
+				CE9A74122DEB565A00200275 /* AutomationSettingsManager.swift in Sources */,
+				CE9A74902DEB909D00200275 /* Version.swift in Sources */,
+				CE9A74072DEB554600200275 /* CapitalManager.swift in Sources */,
+				CE9A73F72DEB54AD00200275 /* MailingLabel.swift in Sources */,
+				CE9A74882DEB904400200275 /* TemplateLibrary.swift in Sources */,
+				CE9A73E52DEB541100200275 /* PrintUtilities.swift in Sources */,
+				CE9A73FC2DEB550900200275 /* ImagePicker.swift in Sources */,
+				CE9A74782DEB8FA000200275 /* Segment.swift in Sources */,
+				CE9A73F42DEB547F00200275 /* MarketingEngine.swift in Sources */,
+				CE9A74842DEB901100200275 /* TaxBill.swift in Sources */,
+				CE9A742C2DEB58C000200275 /* Phase.swift in Sources */,
+				CE9A745A2DEB86E500200275 /* PurchaseReviewView.swift in Sources */,
+				CE9A74A72DEB923C00200275 /* AssistantAutomationToggles.swift in Sources */,
+				CE9A74B02DEB931000200275 /* AssistantMemoryView.swift in Sources */,
+				CE9A74622DEB8E4B00200275 /* RelationshipType.swift in Sources */,
+				CE9A74992DEB915600200275 /* AssistantStrategicPlanner.swift in Sources */,
+				CE9A73ED2DEB545700200275 /* CampaignManager.swift in Sources */,
+				CE9A74CB2DEB9B3100200275 /* LeadInquiryRouter.swift in Sources */,
+				CE9A73F22DEB547400200275 /* VirtualMailboxManager.swift in Sources */,
+				CE9A73F62DEB549A00200275 /* MapSnapshotHelper.swift in Sources */,
+				CE9A748A2DEB905B00200275 /* TemplateManager.swift in Sources */,
+				CE9A74022DEB552900200275 /* DashboardView.swift in Sources */,
+				CE9A743C2DEB84CE00200275 /* PrintSettingsManager.swift in Sources */,
+				CE9A74502DEB860200200275 /* PropertySearchBar.swift in Sources */,
+				CE9A74A12DEB91B100200275 /* AssistantSettings.swift in Sources */,
+				CE9A74242DEB586800200275 /* ParcelMapOverlay.swift in Sources */,
+				CE9A74CD2DEB9B5E00200275 /* TaxPaymentWorkflowManager.swift in Sources */,
+				CE9A743E2DEB84E100200275 /* Property.swift in Sources */,
+				CE9A74702DEB8F0900200275 /* SalesChannel.swift in Sources */,
+				CE9A748E2DEB908D00200275 /* UserActivityLog.swift in Sources */,
+				CE9A73EB2DEB543000200275 /* DocumentTemplateManager.swift in Sources */,
+				CE9A74B22DEB932A00200275 /* AssistantDashboardView.swift in Sources */,
+				CE9A74382DEB846200200275 /* PrintEngine.swift in Sources */,
+				CE9A73E32DEB540700200275 /* PrintFormat.swift in Sources */,
+				CE9A73E72DEB541C00200275 /* PDFExporter.swift in Sources */,
+				CE9A746E2DEB8EF800200275 /* ROITracker.swift in Sources */,
+				CE9A74032DEB552D00200275 /* CRMRecord.swift in Sources */,
+				CE9A746A2DEB8ECC00200275 /* ResourceLink.swift in Sources */,
+				CE9A744A2DEB85C400200275 /* PropertyOverlay.swift in Sources */,
+				CE9A73EE2DEB545F00200275 /* CampaignsView.swift in Sources */,
+				CE9A74962DEB90FD00200275 /* AssistantObservationEngine.swift in Sources */,
+				CE9A73EA2DEB542B00200275 /* DefaultTemplates.swift in Sources */,
+				CE9A73FB2DEB54C100200275 /* LabelFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE6DAACA2DE3FF5E005B9A8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CE6DAAC92DE3FF5E005B9A8E /* Lottie */;
+		};
+		CEC4DA882DBD32470081ABCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CEC4DA872DBD32470081ABCE /* Alamofire */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30C1FE6A22A1B50B7A189355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acreage.Acreage;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		45BA52A86E9B3318F8F02107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acreage.Acreage;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		70CE020EF24C3FEAE57F0B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E3977E62F906292DCBC8C6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7438636A571C488957A1151A /* Build configuration list for PBXProject "Acreage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70CE020EF24C3FEAE57F0B49 /* Debug */,
+				E3977E62F906292DCBC8C6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		950772D9ACA7E5E71D651868 /* Build configuration list for PBXNativeTarget "Acreage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C1FE6A22A1B50B7A189355 /* Debug */,
+				45BA52A86E9B3318F8F02107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CE6DAAC42DE3FF29005B9A8E /* XCLocalSwiftPackageReference "../../../../Downloads/lottie-ios-master" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../../Downloads/lottie-ios-master";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEC4DA822DBD323B0081ABCE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE6DAAC52DE3FF29005B9A8E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Lottie;
+		};
+		CE6DAAC72DE3FF29005B9A8E /* Lottie-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Lottie-Dynamic";
+		};
+		CE6DAAC92DE3FF5E005B9A8E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE6DAAC42DE3FF29005B9A8E /* XCLocalSwiftPackageReference "../../../../Downloads/lottie-ios-master" */;
+			productName = Lottie;
+		};
+		CEC4DA832DBD323B0081ABCE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEC4DA822DBD323B0081ABCE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CEC4DA872DBD32470081ABCE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEC4DA822DBD323B0081ABCE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 526537483B64ABEA21D03A49 /* Project object */;
+}
